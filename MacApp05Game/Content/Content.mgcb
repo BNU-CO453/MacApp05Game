@@ -26,17 +26,23 @@
 /processorParam:Quality=Best
 /build:audio/Adventures.mp3
 
-#begin audio/Coins.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin audio/Coins.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:audio/Coins.mp3
+/build:audio/Coins.wav
 
-#begin audio/flame.mp3
-/importer:Mp3Importer
-/processor:SongProcessor
+#begin audio/flame.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
 /processorParam:Quality=Best
-/build:audio/flame.mp3
+/build:audio/flame.wav
+
+#begin audio/scream01.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/scream01.wav
 
 #begin images/BigShip1.png
 /importer:TextureImporter
