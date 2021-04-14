@@ -38,6 +38,12 @@
 /processorParam:Quality=Best
 /build:audio/Diamondpickup.wav
 
+#begin audio/FallingRock.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/FallingRock.wav
+
 #begin audio/flame.wav
 /importer:WavImporter
 /processor:SoundEffectProcessor
