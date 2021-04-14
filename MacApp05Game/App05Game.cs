@@ -47,8 +47,6 @@ namespace MacApp05Game
         private AnimatedPlayer playerSprite;
         private AnimatedSprite enemySprite;
 
-        private Button restartButton;
-
         private int score;
         private int health;
 
@@ -117,13 +115,6 @@ namespace MacApp05Game
             coinsController.CreateCoin(graphicsDevice, coinSheet);
         }
 
-        private void RestartButton_click(object sender, System.EventArgs e)
-        {
-            //TODO: do something when the button is clicked!
-            
-            Exit();
-        }
-
         /// <summary>
         /// This is a single image sprite that rotates
         /// and move at a constant speed in a fixed direction
@@ -131,13 +122,13 @@ namespace MacApp05Game
         private void SetupAsteroid()
         {
             Texture2D asteroid = Content.Load<Texture2D>(
-               "images/Stones2Filled_01");
+               "images/asteroid-1");
 
             asteroidSprite = new Sprite(asteroid, 1200, 500)
             {
                 Direction = new Vector2(-1, 0),
                 Speed = 100,
-
+                Scale = 0.2f,
                 Rotation = MathHelper.ToRadians(3),
                 RotationSpeed = 2f,
             };
